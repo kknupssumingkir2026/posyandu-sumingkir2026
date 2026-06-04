@@ -1866,7 +1866,7 @@ function onFileChange(id, input){
 
 
 // ===== ADMIN PANEL =====
-const ADMIN_CREDS = [{user:'admin', pass:'posyandu2026'}, {user:'kkn', pass:'sumingkir2026'}];
+const ADMIN_CREDS = [{user:'admin', pass:'admin123'}, {user:'kkn', pass:'kkn123'}];
 const SHEETS_URL  = 'https://docs.google.com/spreadsheets/d/1OTF2kzUG5AB321nzpivScGdIvS5i-VRbc-LDMy23ai8/edit';
 let adminLoggedIn = false;
 let formSubmissions = JSON.parse(localStorage.getItem('form_submissions_sumingkir') || '[]');
@@ -2019,7 +2019,7 @@ document.getElementById('tanggal').min=d.toISOString().split('T')[0];
         <input type="password" id="admin-pass" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()" />
         <div class="admin-err" id="admin-err">❌ Username atau password salah.</div>
         <button class="btn-login" onclick="doLogin()">Masuk →</button>
-        <p style="margin-top:16px;font-size:11px;color:var(--muted)">Default: admin / posyandu2026</p>
+        <p style="margin-top:16px;font-size:11px;color:var(--muted)">Login 1: admin / admin123 &nbsp;|&nbsp; Login 2: kkn / kkn123</p>
       </div>
 
       <!-- REKAP DATA -->
